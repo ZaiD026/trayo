@@ -1,8 +1,9 @@
 import { useQuery } from "react-query";
 import Sidebar from "../fragments/Sidebar";
-import { useState } from "react";
 import CovidMap from "../components/Map/CovidMap";
 import LineGraph from "../components/Chart/LineGraph";
+import React from "react";
+
 // import Map from "../components/Map/Map";
 interface CovidData {
   updated: number;

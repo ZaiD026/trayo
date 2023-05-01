@@ -1,11 +1,5 @@
 import React from "react";
 import AppRoutes from "./routes/AppRoutes";
-import Dashboard from "./pages/Dashboard";
-// import Map from "./components/Map/Map";
-import SimpleMap from "./components/Map/CovidMap";
-// import CovidMap from "./components/Map/Map";
-import CovidMap from "./components/Map/CovidMap";
-import LineGraph from "./components/Chart/LineGraph";
 import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
 

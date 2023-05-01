@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   return (
-    // <div className="flex">
     <div
       className={` ${
         open ? "w-40" : "w-60 "
@@ -83,6 +82,5 @@ export default function Sidebar() {
         </div>
       </div>
     </div>
-    // </div>
   );
 }

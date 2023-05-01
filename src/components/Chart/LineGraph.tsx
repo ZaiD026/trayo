@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Chart, ChartData, ChartOptions } from "chart.js/auto";
+import { Chart, ChartData } from "chart.js/auto";
 import axios from "axios";
 
 interface LineGraphProps {
