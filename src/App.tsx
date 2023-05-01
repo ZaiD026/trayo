@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AppRoutes from "./routes/AppRoutes";
+import Dashboard from "./pages/Dashboard";
+// import Map from "./components/Map/Map";
+import SimpleMap from "./components/Map/CovidMap";
+// import CovidMap from "./components/Map/Map";
+import CovidMap from "./components/Map/CovidMap";
+import LineGraph from "./components/Chart/LineGraph";
+import { QueryClient, QueryClientProvider } from "react-query";
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="container mx-auto px-2 max-w-5xl pt-10 md:pt-32">
+    <QueryClientProvider client={queryClient}>
+      <AppRoutes />
+    </QueryClientProvider>
+    // </div>
   );
 }
 
