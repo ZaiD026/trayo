@@ -11,6 +11,7 @@ const LineGraph: React.FC<LineGraphProps> = ({ apiUrl }) => {
   const [data, setData] = useState<ChartData>();
 
   useEffect(() => {
+    // DATA BEING FETCHED HERE USING AXIOS LIBRARY IN AN ASYNCHRONUS METHOD
     const fetchData = async () => {
       const response = await axios.get(apiUrl);
       const chartData = {

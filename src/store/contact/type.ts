@@ -1,5 +1,4 @@
-// import { type } from "os";
-
+// DEFINES THE STRUCTURE FOR THE REDUX TYPE
 export interface Contact {
   id: string;
   first_name: string;

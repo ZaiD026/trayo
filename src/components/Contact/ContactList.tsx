@@ -24,6 +24,7 @@ const ContactList = () => {
           <span className="font-normal text-gray-600">{contact.last_name}</span>
         </div>
         <div className="flex gap-4">
+          {/* NAVIGATED TO EDIT PAGE ALSO ID PASSED SO THAT I CAN CHECK AND COMPARE WHICH CONTACT TO EDIT */}
           <Link to={`edit-contact/${contact.id}`}>
             <button>
               <svg
@@ -69,8 +70,8 @@ const ContactList = () => {
           Add Contact
         </button>
       </Link>
-      <>{console.log(contacts)}</>
       <div className="grid gap-5 md:grid-cols-2">
+        {/* CHECKS WHETHER CONTACT IS THERE */}
         {contacts.length ? (
           renderCard()
         ) : (

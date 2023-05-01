@@ -13,7 +13,7 @@ const AddContact = () => {
     last_name: "",
     status: true,
   });
-
+  // MAIN LOGIC OF CODE WHERE ADD FUNCTION IS BEING HANDLED
   const handleAddContact = () => {
     dispatch(
       addContact({

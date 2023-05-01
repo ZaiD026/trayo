@@ -9,10 +9,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* WRAPPED IN THE PROVIDER  SO THAT STORE IS ACCESSIBLE THROUGH APP */}
     <Provider store={store}>
-      {/* <QueryClientProvider client={queryClient}> */}
       <App />
-      {/* <QueryClientProvider/> */}
     </Provider>
   </React.StrictMode>
 );

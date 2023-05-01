@@ -9,6 +9,7 @@ function CovidMap() {
         iconUrl: "https://cdn.iconscout.com/icon/free/png-256/marker-186-418087.png",
         iconSize: [25, 25],
     });
+    // API BEING FETCHED USING AXIOS IN AN ASYNC METHOD 
     useEffect(() => {
         async function fetchData() {
             const response = await axios.get(
@@ -18,7 +19,6 @@ function CovidMap() {
         }
         fetchData();
     }, []);
-    // console.log(data)
     const [activeMarker, setActiveMarker] = useState(null);
     const position = [20, 77]
 

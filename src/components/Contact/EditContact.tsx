@@ -10,14 +10,17 @@ const EditContact = () => {
   const dispatch = useDispatch();
   const contacts = useSelector((store: RootState) => store.contact);
   const navigate = useNavigate();
-  const existingUser = contacts.filter((contact) => contact.id === params.id);
-  const { first_name, last_name, status } = existingUser[0];
+  //CHECKS EXISTING CONTACT ON THE BASIS OF ID PRESENT IN THE URL
+  const existingContact = contacts.filter(
+    (contact) => contact.id === params.id
+  );
+  const { first_name, last_name, status } = existingContact[0];
   const [values, setValues] = useState({
     first_name,
     last_name,
     status,
   });
-
+  // MAIN LOGIC OF THE CODE WHERE FORM IS BEING HANDLED
   const handleEditContact = () => {
     dispatch(
       editContact({

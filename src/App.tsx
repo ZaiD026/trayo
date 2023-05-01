@@ -5,11 +5,10 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    // <div className="container mx-auto px-2 max-w-5xl pt-10 md:pt-32">
+    // WRAPPED IN THE QueryClientProvider FOR REACT QUERY
     <QueryClientProvider client={queryClient}>
       <AppRoutes />
     </QueryClientProvider>
-    // </div>
   );
 }
 
